@@ -78,6 +78,7 @@ This will:
   - `ID` (unique identifier)
   - `Group`
   - `Length (mm)`
+- A grouped boxplot saved as `boxplot.png` (if `--plot` is enabled).
 
 ---
 
@@ -91,6 +92,17 @@ fish-data-generator/
 ├── README.md                # Project documentation
 └── examples/                # Example datasets and usage
 ```
+
+---
+
+## **Example Command with Boxplot**
+The following command:
+```bash
+python generate_dataset.py --variable "Length (mm)" --groups Control A B C --mean 120 --sd 10 --max_change -10 --plot --significant false
+```
+Generates:
+- **`dataset.csv`** – The dataset with group data.
+- **`boxplot.png`** – A grouped boxplot visualizing the dataset.
 
 ---
 
